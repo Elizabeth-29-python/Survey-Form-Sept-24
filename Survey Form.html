@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv=”X-UA-Compatible content="IE=edge">
+    <meta name="viewport" content=
+    "width=device-width", initial-scale="1.0">
+    <title>
+    Survey Form
+    </title>
+    </head>
+<style>
+body {
+    background-color:#04B060;
+    font-family: Verdana;
+    text-align: center;
+}
+form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.form-text {
+    text-align: left;
+    margin-bottom: 25px;
+}
+.form-text label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-text input, 
+.form-text select, 
+.form-text textarea {
+    border: 1px solid #D3D3D3;
+    border-radius: 2px; 
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+display: inline-block;
+width: auto; 
+
+}
+button {
+    background-color: #04B060;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-size: 21px;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+</style>
+
+
+<body>
+<h1>Creative Computing Survey Form</h1>
+<form id="form">
+<div class="form-text">
+    Name
+    <input type="text" id="Name" placeholder="Enter your Name">
+</div>
+<div class="form-text">
+    Email
+    <input type="text" id="Email" placeholder="Enter your Email">
+</div>
+<div class="form-text">
+    Age 
+    <input type="text" id="Age" placeholder="Enter your Age">
+</div>
+<div class="form-text"> 
+    <label>
+    Which option best describes you?
+    </label>
+    <select>
+        <option value="student">Student</option>
+        <option value="intern">Intern</option>
+        <professional value="professional">Professional</professional>
+        <option value="Other">Other</option>
+    </select>
+</div>
+<div class="form-text"> 
+    <label>
+     Would you recommend Creative 
+     Computing to a friend? </label>
+    <label for="recommend-1">
+        <input type="radio"
+        id="recommend-1"
+        name="recommend">Yes</input>
+    </label>
+    <label for="recommend-2">
+        <input type="radio"
+        id="recommend-2"
+        name="recommend">No</input>
+    </label>
+    <label for="recommend-3">
+        <input type="radio"
+        id="recommend-3"
+        name="recommend">Maybe</input>
+    </label>
+</div>
+    <div class="form-text"> 
+        <label>Languages and Frameworks known 
+    <small>(Check all that apply)</small>
+    </label>
+    <label for="inp-1">
+    <input type="checkbox" 
+    name="input">C</input></label>
+    <label for="inp-2">
+        <input type="checkbox" 
+        name="input">C++</input></label>
+    <label for="inp-3">
+        <input type="checkbox" 
+        name="input">C#</input></label>
+    <label for="inp-4">
+        <input type="checkbox" 
+        name="input">Java</input></label>
+    <label for="inp-5">
+        <input type="checkbox" 
+        name="input">Python</input></label>
+    <label for="inp-6">
+        <input type="checkbox" 
+        name="input">JavaScript</input></label>
+    <label for="inp-7">
+        <input type="checkbox" 
+        name="input">React</input></label>
+    <label for="inp-8">
+        <input type="checkbox" 
+        name="input">Angular</input></label>
+    <label for="inp-9">
+        <input type="checkbox" 
+        name="input">Django</input></label>
+    <label for="inp-10">
+        <input type="checkbox" 
+        name="input">Spring</input></label>
+</div>
+<div class="form-text">
+    <label for="comment">
+        Any comments or suggestions
+    </label>
+    <textarea name="comment" id="comment"
+    placeholder="Enter your comment here">
+</textarea>
+</div>
+<button type="submit" value="submit">
+    Submit
+</button>
+</form>
+</body>
+</html>
+
